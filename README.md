@@ -1,1 +1,1 @@
-# cursosoftex
+# curso_softex
