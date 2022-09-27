@@ -6,7 +6,7 @@ def calc(x,y,opcao):
         print(f'\nResultado: {x-y}')
     elif opcao == 3:
         print(f'\nResultado: {x*y}')
-    elif opcao == 4:
+    else:
         print(f'\nResultado: {x/y}')
 
 
