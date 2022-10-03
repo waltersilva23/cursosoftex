@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h> //necessário para usar as funções malloc() e free()
+#include <stdlib.h>
 #include <conio.h>
 
 int main(void)
 {
-  float *ponteiro; //definindo o ponteiro v
+  float *ponteiro; 
   int i, num_componentes, opcao, novo_num, adic;
   
   num_componentes = 22;
@@ -13,14 +13,12 @@ int main(void)
 
   printf("\nEsse vetor tem o tamanho 22\n");
   
-  //Armazenando os dados em um vetor
   for (i = 0; i < num_componentes; i++)
   {
     printf("\nDigite o valor para a posicão %d do vetor: ", i+1);
     scanf("%f",&ponteiro[i]);
   }
   
-  //realocando
   printf("\nDeseja adicionar numeros?");
   printf("\n1 - sim");
   printf("\n2 - nao\n");
@@ -45,7 +43,6 @@ int main(void)
     adic = num_componentes;
   }
 
-  // ------ Percorrendo o vetor e imprimindo os valores ----------
   printf("\n*********** Valores do vetor dinamico ************\n\n");
   
   for (i = 0;i < adic; i++)
@@ -53,7 +50,6 @@ int main(void)
     printf("%.2f\n",ponteiro[i]);
   }
   
-  //liberando o espaço de memória alocado
   free(ponteiro);
   
   getch();
