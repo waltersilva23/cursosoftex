@@ -1,0 +1,51 @@
+class impressora:
+    
+    atributos:
+        marca: CARACTERE;
+        cor: CARACTERE;
+        largura: REAL;
+
+    métodos:
+        imprimir;
+        scanear;
+        copiar;
+
+    
+class mouse:
+
+    atributos:
+        modelo: CARACTERE;
+        dpi: INTEIRO;
+        cor: CARACTERE;
+    
+    métodos:
+        mover;
+        clicar;
+        rolar scroll;
+
+
+class estudar:
+
+    atributos:
+        tempo: REAL;
+        assunto: CARACTERE;
+        lugar: CARACTERE;
+
+    métodos:
+        ler;
+        assistir;
+        exercitar;
+
+
+class viagem:
+
+    atributos:
+        destino: CARACTERE;
+        bagagem: INTEIRO;
+        hospedagem: LÓGICO;
+
+
+    métodos:
+        diversão;
+        tirar fotos;
+        conhecer novos lugares;
