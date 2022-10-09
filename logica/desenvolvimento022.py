@@ -1,6 +1,3 @@
-from numpy import real
-
-
 class Conta:
 
     total_contas = 0
