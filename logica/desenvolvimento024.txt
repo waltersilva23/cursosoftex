@@ -1,0 +1,27 @@
+package financeiro;
+    
+    class Tesouraria {
+        //atributos e métodos
+    }
+
+    class GestaoTributos {
+        //atributos e métodos
+    }
+
+    class Contabilidade {
+        //atributos e métodos
+    }
+
+package comercial;
+
+    class Marketing {
+        //atributos e métodos
+    }
+
+    class Vendas {
+        //atributos e métodos
+    }
+
+    class ProspeccaoClientes {
+        //atributos e métodos
+    }
