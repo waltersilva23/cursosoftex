@@ -1,0 +1,22 @@
+Factory Method
+
+Definir uma interface para criar objetos, mas deixar que as subclasses decidem que classe instanciar. O Factory Method, também conhecido como construtor virtual, possibilita adiar a criação do objeto a subclasses .
+
+Esse padrão é comumente utilizado pelos projetistas de software quando existe a necessidade de encapsular a criação de uma classe se isolando do conhecimento da classe concreta da aplicação cliente através de uma interface. Essa necessidade é comumente desejada por aqueles que trabalham no desenvolvimento de frameworks, que utilizam classes abstratas para definir e manter relacionamentos entre os objetos. Dessa forma os clientes implementam as funcionalidades esperadas pelo framework adicionando a lógica de negócio específica da aplicação, sem que o framework tenha o conhecimento de como e qual a lógica implementada pela aplicação para complementá-lo.
+
+Um exemplo de utilização do padrão pode ser na construção de aplicações que tenha que dar suporte a diferentes implementações de persistência com o mínimo de retrabalho.
+
+A utilização do padrão Factory Method pode estar condicionada quando:
+
+1- Uma classe não pode antecipar a classe/tipo de objetos que devem criar;
+2- Uma classe especifique que suas subclasses tenham o conhecimento dos objetos que criam;
+3- Classes que delegam responsabilidade para uma dentre várias subclasses auxiliares, e você quer obter o conhecimento de qual subclasse auxiliar que é a delegada.
+
+Os participantes são:
+
+Product - define a interface de objetos que deverá ser criado pelo método fábrica;
+ConcreteProduct – implementação da interface Product;
+Creator – declara o método fábrica o qual retorna um objeto do tipoProduct;
+ConcreteCreator – redefine(override) o método fábrica que retorna uma instância concreta da interfaceProduct.
+
+O padrão Factory Method elimina a necessidade de anexar classes específicas das aplicações no código. O código lida somente com a interface de Product; portanto ele pode trabalhar com qualquer implementação da classe que implementa Product, definida pelo usuário.
