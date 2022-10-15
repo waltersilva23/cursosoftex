@@ -1,0 +1,7 @@
+YouTube
+
+Quando desligamos o JavaScript do site, percebemos que ele fica totalmente inutilizável, pois praticamente todo o site funciona baseado em JavaScript.
+
+Curso em video
+
+Ao acessar a plataforma e desligar o JavaScript, não vemos nenhuma difença aparentemente, mas ao tentar logar minha conta, percebi que a mesma não vai para o meu painel de cursos, pois esse acesso foi feito com JavaScript.

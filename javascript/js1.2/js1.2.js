@@ -1,0 +1,1 @@
+console.log("Escolhi o vs code já por usá-lo antes de começar o curso, e pela facilidade de conseguir extensões que facilitam na hora de codar, facilitando o pocesso de aprendizado e organização no código.");
