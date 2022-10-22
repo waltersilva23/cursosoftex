@@ -6,7 +6,7 @@ var banco = {
 }
 
 var buscar_saldo = function(){
-    console.log("Saldo: " + banco.saldo)
+    console.log("Saldo: " + banco.saldo.toFixed(2))
 }
 
 var deposito = function(valor){
