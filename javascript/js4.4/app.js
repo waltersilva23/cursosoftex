@@ -4,7 +4,7 @@ const app = express();
 const db = require('./models/db');
 
 app.get("/", async (req, res) =>{
-    res.send("Página inicial");
+    res.send("Servidor ativado!");
 });
 
 app.listen(3333, ()=>{
