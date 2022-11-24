@@ -8,9 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Criei Meu Primeiro Projeto React</h1>
         <p>Para não perder o costume</p>
-        <p>
-          Hello World!
-        </p>
+        <p>Hello World!</p>
       </header>
     </div>
   );
