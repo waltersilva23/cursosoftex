@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    
+    .normal-home, .preferencial-home, .botao1, .botao2 {
+        width: 700px ;
+    }
+
+}
