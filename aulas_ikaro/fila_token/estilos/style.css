@@ -94,6 +94,10 @@ input {
     text-align: center;
 }
 
+span {
+    margin-right: 10px;
+}
+
 .botao1 {
     background-color: #3d3ddd;
     color: #ffffff;
