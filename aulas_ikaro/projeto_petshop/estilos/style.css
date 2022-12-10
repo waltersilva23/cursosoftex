@@ -6,20 +6,30 @@
     box-sizing: border-box;
 }
 
-#burguer {
-    display: block;
-    text-align: center;
-    cursor: pointer;
-}
-
-nav {
+div#topo {
     display: flex;
     justify-content: space-between;
+}
+
+#logo {
+    margin: 10px;
+}
+
+#burguer {
+display: block;
+    text-align: center;
+    cursor: pointer;
+    margin: 15px;
 }
 
 ul#itens {
     display: none;
     list-style-type: none;
+    width: 500px;
+}
+
+nav {
+    background-color: red;
 }
 
 nav > div >  ul > li > a {
@@ -27,5 +37,4 @@ nav > div >  ul > li > a {
     text-align: center;
     text-decoration: none;
     color: #000000;
-    
 }
