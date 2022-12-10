@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-div#topo {
+nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,7 +32,7 @@ ul#itens {
     width: 500px;
 }
 
-nav {
+#menu {
     display: flex;
     align-items: center;
     background-color: red;
