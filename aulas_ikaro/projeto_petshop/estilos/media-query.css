@@ -6,11 +6,15 @@
         display: none;
     }
 
-    menu {
-        display: block;
-    }
+    /*
+    Está funcionando sem.
 
-    menu > ul > li {
+    div#itens {
+        display: block;
+    } 
+    */
+
+    div > ul > li {
         display: inline-block;
     }
 

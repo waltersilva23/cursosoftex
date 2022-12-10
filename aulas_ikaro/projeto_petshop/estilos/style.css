@@ -12,15 +12,17 @@
     cursor: pointer;
 }
 
-menu {
-    display: none;
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
-ul {
+ul#itens {
+    display: none;
     list-style-type: none;
 }
 
-menu > ul > li > a {
+nav > div >  ul > li > a {
     display: block;
     text-align: center;
     text-decoration: none;
