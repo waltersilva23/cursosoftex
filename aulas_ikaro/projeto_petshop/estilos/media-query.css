@@ -1,18 +1,21 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    ul#itens {
+        width: 100vw;
+    }
+}
+
 @media screen and (min-width: 768px) {
     
     #burguer {
         display: none;
     }
 
-    /*
-    Está funcionando sem.
-
-    div#itens {
-        display: block;
-    } 
-    */
+    ul#itens {
+        width: 70vw;
+    }
 
     div > ul > li {
         display: inline-block;
