@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from './logo192.png';
 
 function Header () {
