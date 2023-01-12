@@ -1,0 +1,33 @@
+O protocolo HTTP define um conjunto de métodos de requisição responsáveis por indicar a ação a ser executada para um dado recurso. Embora esses métodos possam ser descritos como substantivos, eles também são comumente referenciados como HTTP Verbs (Verbos HTTP).
+GET
+Essa é a requisição mais comum de todas. Através dessa requisição nós pedimos a representação de um recurso: que pode ser um arquivo html, xml, json, etc.
+Um exemlo de requisição GET seria:
+GET /index.html
+POST
+O método POST é utilizado quando queremos criar um recurso. Quando usamos POST, os dados vão no corpo da requisição e não na URI.
+EX:
+POST / HTTP/1.1
+PUT
+Requisita que um recurso seja "guardado" na URI fornecida. Se o recurso já existir, ele deve ser atualizado. Se não existir, pode ser criado.
+Ex: PUT /new.html HTTP/1.1
+DELETE
+Exclui o recurso especificado.
+DELETE /arquivo.html HTTP/1.1
+TRACE
+Devolve a mesma requisição que for enviada veja se houve mudança e/ou adições feitas por servidores intermediários.
+TRACE /index.html
+OPTIONS
+Retorna os métodos HTTP suportados pelo servidor para a URL especificada.
+OPTIONS /index.html HTTP/1.1
+PATCH
+Serve para atualizar partes de um recurso, e não o recurso todo.
+PATCH /file.txt HTTP/1.1
+CONNECT
+Converte a requisição de conexão para um túnel TCP/IP transparente, geralmente para facilitar a comunicação criptografada com SSL (HTTPS) através de um proxy HTTP não criptografado.
+CONNECT www.exemplo.com:443 HTTP/1.1
+HEAD
+Retorna somente os cabeçalhos de uma resposta.
+HEAD /index.html
+
+A Web Services Description Language (WSDL) é uma linguagem baseada em XML utilizada para descrever Web Services funcionando como um contrato do serviço. Trata-se de um documento escrito em XML que além de descrever o serviço, especifica como acessá-lo e quais as operações ou métodos disponíveis.
+WSDL é utilizada para definir serviços como uma coleção de endpoints (endereços de rede), ou portas.
