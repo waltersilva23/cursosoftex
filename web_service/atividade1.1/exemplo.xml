@@ -1,4 +1,9 @@
- <?xml version="1.0"?>
+POST /Cliente HTTP/1.1
+Host: www.minhaempresa.com
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: 200
+
+<?xml version="1.0"?>
 <soap:Envelope
 xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
 soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
@@ -10,6 +15,10 @@ soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
 </soap:Envelope>
 
  
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: 200
+
 <?xml version="1.0"?>
 <soap:Envelope
 xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
