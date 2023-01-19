@@ -1,48 +1,42 @@
-Operações com o CRUD
+Operações com o CRUD e suas rotas em um servidor local na porta 3030.
 
 
-Criação (Create): 
-Rota: POST /books Corpo da requisição:
-
-
-{
-    "name": "The Lord of the Rings",
-    "author": "J.R.R. Tolkien",
-    "isbn": "9780544003415"
-}
-
-
-Resposta: 201 Created Descrição: essa rota é usada para adicionar um novo livro ao estoque. O nome, autor e ISBN do livro são enviados no corpo da requisição e um ID único é gerado pelo servidor e retornado na resposta.
-
-
-Leitura (Read): 
-Rota: GET /books/:id Resposta: 200 OK Exemplo de resposta:
+Create: Irá incluir um novo livro.
+Rota: POST http://localhost:3030/books
 
 
 {
-    "id": 1,
-    "name": "The Lord of the Rings",
-    "author": "J.R.R. Tolkien",
-    "isbn": "9780544003415"
+    "name": "A volta ao mundo em 80 dias",
+    "author": "Júlio Verne",
+    "isbn": "9788592797591"
 }
 
-Descrição: essa rota é usada para obter informações sobre um livro específico, usando o ID do livro na rota. A resposta inclui todas as informações sobre o livro.
 
 
+Read: Irá listar todos os livros da livraria.
+Rota: GET http://localhost:3030/books
 
-
-Atualização (Update):
- Rota: PUT /books/:id Corpo da requisição:
 
 {
-    "name": "The Lord of the Rings - Updated",
-    "author": "J.R.R. Tolkien",
-    "isbn": "9780544003415"
+    "name": "A volta ao mundo em 80 dias",
+    "author": "Júlio Verne",
+    "isbn": "9788592797591"
 }
 
 
-Resposta: 204 No Content Descrição: essa rota é usada para atualizar as informações de um livro específico, usando o ID do livro na rota. O corpo da requisição inclui as informações atualizadas do livro.
+
+Update: Irá atualizar um determinado livro correspondente ao seu id.
+ Rota: PUT http://localhost:3030/books/:id
+
+{
+    "id": 435,
+    "name": "A volta ao mundo em 80 dias",
+    "author": "Júlio Verne",
+    "isbn": "9788592797591"
+}
 
 
-Exclusão (Delete):
- Rota: DELETE /books/:id Resposta: 204 No Content Descrição: essa rota é usada para excluir um livro específico do estoque, usando o ID do livro na rota. A resposta não inclui nenhum conteúdo, pois o livro foi excluído.
+
+
+Delete: Irá excluir determinado livro correspondente ao seu id.
+ Rota: DELETE http://localhost:3030/books/books/:id
