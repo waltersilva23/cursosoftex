@@ -19,7 +19,7 @@ servidor.get('/alunos', (req,res) => {
 });
 
 //Adiciona um novo aluno
-servidor.post('/cursos', (req,res) => {
+servidor.post('/alunos', (req,res) => {
     const { nome } = req.body;
     alunos.push(nome);
 
@@ -27,7 +27,7 @@ servidor.post('/cursos', (req,res) => {
 });
 
 //Atualizar a lista de alunos
-servidor.put('/cursos/:index', (req,res) => {
+servidor.put('/alunos/:index', (req,res) => {
     const { index } = req.params;
     const { nome } = req.body;
 
@@ -36,7 +36,7 @@ servidor.put('/cursos/:index', (req,res) => {
 });
 
 //Excluir aluno da lista
-servidor.delete('/cursos/:index', (req,res) => {
+servidor.delete('/alunos/:index', (req,res) => {
     const { index } = req.params;
 
     alunos.splice(index, 1);
