@@ -43,7 +43,13 @@ servidor.delete('/alunos/:index', (req,res) => {
     return res.json({ message: "O aluno foi excluido da lista"});
 });
 
+//rotas
+//GET /alunos/:index e /alunos
+//POST /alunos
+//PUT /alunos/:index
+//DELETE /alunos/:index
 
+//STATUS HTTP: Todas tiveram o status 200.
 
 
 
