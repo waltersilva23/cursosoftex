@@ -1,0 +1,13 @@
+ Resources
+  http://localhost:3000/cursos
+  http://localhost:3000/prazos
+
+  Home
+  http://localhost:3000
+
+
+GET /cursos 200 17.645 ms - 424
+POST /cursos 201 29.798 ms - 69
+PUT /cursos/6 200 9.245 ms - 69
+DELETE /cursos/6 200 32.087 ms - 2
+GET /cursos 200 8.701 ms - 424
